@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
             playerAudio.PlayOneShot(jumpSound, 1.0f);
             doubleJumpUsed = false;
         }
-        else if(Input.GetKeyDown(KeyCode.Space) && !isOnGround && !doubleJumpUsed) 
+        else if (Input.GetKeyDown(KeyCode.Space) && !isOnGround && !doubleJumpUsed) 
         {
             doubleJumpUsed = true;
             playerRb.AddForce(Vector3.up * doubleJumpForce, ForceMode.Impulse);
